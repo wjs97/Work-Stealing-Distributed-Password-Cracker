@@ -5,7 +5,7 @@ This was my final capstone project for Paralell Programming course I took at UCh
 How to run:
 
 Benchmark tests
-=> python3 benchmark/benchmark.py
+=> python3 benchmark/benchmark.py (small)
     - Small flag runs tests using only small dataset, omitting this flag runs full benchmark tests
 
 Run Manually
