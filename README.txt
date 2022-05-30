@@ -1,9 +1,9 @@
 Name: William Sayre
 Project Type: Brute Force Password Cracker Using Work-Stealing Thread Scheduler
-Known Issues: None
 
+This was my final capstone project for Paralell Programming course I took at UChicago. I built a library for concurrent brute force password cracking in Golang. My system is configured to break passwords that are hashed using the MD5 hash protocol but it could easily be repurposed for other applications. I also built a work-stealing thread scheduler which is designed to be used by other concurrent Golang applications.
 
-How to run (MAKE SURE YOU ARE SITTING AT TOP OF proj3 DIR):
+How to run:
 
 Benchmark tests
 => python3 benchmark/benchmark.py
@@ -18,8 +18,5 @@ Run Manually
 	" numThreads =  if empty, run sequentially. Otherwise this is # of threads"
 
 
-Works Cited:
-Marked with inline comments wherever applicable
-
 Performance Analysis:
-Please see attached Performance Analysis dir (included plain text version without graphs and PDf version with graphs. Wanted to be extra safe since I had issue with PDF getting corrupted on earlier project)
+Please see attached Performance Analysis dir
