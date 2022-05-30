@@ -19,7 +19,7 @@ type InputJob struct {
 Read in input JSON file and store as slice of InputJobs
 */
 func Read(input string) []InputJob {
-	path := "/Users/will/Parallel/proj3-wjs97/proj3/data/in/" + input
+	path := "./data/in/" + input
 	effectsFile, err := os.Open(path)
 	if err != nil {
 		fmt.Println("INVALID INPUT PATH!")
@@ -43,7 +43,7 @@ func Read(input string) []InputJob {
 Write slice of results to output file
 */
 func Write(results []string, writePath string) {
-	path := "/Users/will/Parallel/proj3-wjs97/proj3/data/out/" + writePath
+	path := "./data/out/" + writePath
 	file, _ := json.Marshal(results)
 	ioutil.WriteFile(path, file, 0644)
 
